@@ -1,2 +1,2 @@
 # springboot-mybatis
-springBoot整合mybatis后的基础框架
+springBoot分模块整合mybatis后的基础框架
