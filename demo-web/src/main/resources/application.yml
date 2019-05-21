@@ -1,4 +1,5 @@
 spring:
+  port: 8088
   profiles:
     active: test
   datasource:
@@ -32,6 +33,8 @@ mybatis:
   typeAliasesPackage: demo.demodao.pojo
 #更多配置请参见：http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
 
+server:
+  port: 8088
 
 
 

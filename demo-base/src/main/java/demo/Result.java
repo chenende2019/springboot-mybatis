@@ -38,16 +38,16 @@ public class Result<T>{
         this.errorMes = errorMes;
     }
 
-    public static Result<Object> isError(String errorCode,String errorMes){
-        Result<Object> objectResult = new Result<>();
+    public static <T> Result isError(String errorCode,String errorMes){
+        Result<T> objectResult = new Result<>();
         objectResult.success=false;
         objectResult.errorCode=errorCode;
         objectResult.errorMes=errorMes;
         return objectResult;
     }
 
-    public static Result<Object> isSuccess (Object data){
-        Result<Object> objectResult = new Result<>();
+    public static <T>Result isSuccess (T data){
+        Result<T> objectResult = new Result<>();
         objectResult.data=data;
         return objectResult;
     }
